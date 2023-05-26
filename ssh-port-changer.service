@@ -1,0 +1,11 @@
+[Unit]
+Description=SSH Port Changer
+After=network.target
+
+[Service]
+ExecStart=/var/projects/ssh/ssh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
